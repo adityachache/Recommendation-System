@@ -19,29 +19,7 @@ You can explore brand and category distributions, most expensive and cheapest pr
 and overall price distribution.
 """)
 
-# --- Download CSV from Google Drive ---
-@st.cache_data
-def load_data_from_drive():
-    file_id = '1RsybmkRpYDNcVx6G3bb_qW-fgFD-4NBq'  # Replace with your actual file ID
-    url = f'https://drive.google.com/uc?id={file_id}&export=download'
-    output = 'clusters.csv'
-    gdown.download(url, output, quiet=False)
-    
-    try:
-        df = pd.read_csv(output)
-    except Exception as e:
-        st.error(f"Error loading CSV: {e}")
-        df = pd.DataFrame()  # Empty DataFrame to prevent crashing
-    return df
-
-# --- Load Data ---
-df = load_data_from_drive()
-
-# --- Display Data ---
-if not df.empty:
-    st.success("Cluster Data Loaded")
-else:
-    st.error("Failed to load data from CSV.")
+df = pd.read_csv('clusters.csv')
 
 # --- KPIs (Key Performance Indicators) ---
 total_products = len(df)

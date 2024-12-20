@@ -7,7 +7,7 @@ st.write("This page uses association rules from the Apriori algorithm to recomme
 
 # Load precomputed association rules and cluster assignments
 rules = pd.read_csv("data/rules.csv")  # columns: antecedents, consequents, confidence, lift, support, etc.
-clusters = pd.read_csv("data/clusters.csv")  # columns: item, Cluster
+clusters = pd.read_csv("clusters.csv")  # columns: item, Cluster
 
 
 def parse_itemset(item_str):
