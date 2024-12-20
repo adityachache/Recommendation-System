@@ -48,19 +48,6 @@ The system identifies relationships between products that are frequently bought 
 
 ---
 
-## **📂 Project Structure**
-```
-📦 recommendation-system
- ┣ 📂 data
- ┃ ┗ 📜 clusters.csv  # Data file containing product information (stored on Google Drive)
- ┣ 📂 pages
- ┃ ┗ 📜 Visualizations.py  # Page containing all visualizations and analytics
- ┣ 📜 app.py  # Main file to run the Streamlit app
- ┣ 📜 README.md  # Project summary and instructions
- ┗ 📜 requirements.txt  # List of dependencies and libraries
-```
----
-
 ## **⚙️ How to Run the Project Locally**
 Follow these instructions to run the **Product Recommendation System** on your local machine.
 
@@ -134,30 +121,6 @@ All visualizations are built using **Plotly** for interactivity.
 - **More Visualizations**: Add a timeline of product prices, popularity trends, and more.
 - **Improved Filtering**: Advanced filtering options like brand, category, and price sliders.
 - **Download Options**: Enable users to download product data.
-
----
-
-## **🤝 Contributing**
-Contributions are welcome! Here’s how you can get involved:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Submit a pull request.
-
----
-
-## **📜 License**
-This project is licensed under the **MIT License**. See the `LICENSE` file for more information.
-
----
-
-## **📞 Contact**
-For any questions or feedback, feel free to contact:
-- **Email**: [your_email@example.com](mailto:your_email@example.com)
-- **GitHub**: [Your GitHub Profile](https://github.com/your_username/)
-
-If you found this useful, give it a ⭐ on GitHub!
 
 ---
 
