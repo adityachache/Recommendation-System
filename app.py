@@ -36,6 +36,6 @@ df = load_data_from_drive()
 # --- Display Data ---
 if not df.empty:
     st.success("Cluster Data Loaded")
-    st.dataframe(df)
+    st.dataframe(df[:1000])
 else:
     st.error("Failed to load data from CSV.")
