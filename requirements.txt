@@ -1,0 +1,4 @@
+gdown==5.2.0
+pandas==2.2.3
+plotly==5.22.0
+streamlit==1.32.0
